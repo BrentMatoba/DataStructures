@@ -1,6 +1,8 @@
 unsorted=[0, 8, 5, 3, 20, 2, 9]
 #recursive algorithm
 #keyword: pivot
+#Time Complexity: Worst case: O(n^2), average case:O(nlogn)
+
 
 #The pivot is the point around which the rest of the array is sorted.
 #pivot MUST meet three conditions after being sorted
@@ -95,7 +97,11 @@ def swapIndex(array, left, right):
     #swaps two indexes within a given array
     array[left], array[right] = array[right], array[left]
 
-
+def splitList(array):
+    midpoint = len(array)//2
+    halfOne = array[:midpoint]
+    halfTwo = array[midpoint:]
+    print(halfOne, halfTwo)
 #find itemFromRight, the first item from the right smaller than the pivot
     #repeat until itemFromLeft has a greater index than itemFromRight
     #swap itemFromLeft with pivot.
@@ -112,7 +118,8 @@ pivotToEnd(pivot, unsorted)
 itemFromLeft = getItemFromLeft(pivot, unsorted)
 itemFromRight = getItemFromRight(pivot, unsorted)
 swapIndex(unsorted, itemFromLeft, itemFromRight)
-
+splitList(unsorted)
+#divide array into two halves, each gets a recursion
 
 
 
