@@ -71,11 +71,11 @@ def getItemFromLeft(pivot, array):
     seeker = array[i]
     while i <= len(array):
         if seeker >= pivot:
-            return seeker
+            return i
         i+=1
         seeker = array[i]
 
-    return seeker
+    return i
 def getItemFromRight(pivot, array):
     
     #gets last item of array that is not the pivot
@@ -84,26 +84,24 @@ def getItemFromRight(pivot, array):
 
     while i >= 0:
         if array[i] < pivot:
-            return seeker
+            return i
         i -=1
         seeker = array[i]
 
-    return seeker
+    return i
         
 
 def swapIndex(array, left, right):
+    #swaps two indexes within a given array
     array[left], array[right] = array[right], array[left]
 
 
 #find itemFromRight, the first item from the right smaller than the pivot
-    #swap
     #repeat until itemFromLeft has a greater index than itemFromRight
     #swap itemFromLeft with pivot.
     #recursively call the function
 
-test = [1, 2]
-swapIndex(test, 0, 1)
-print(test)
+
 
 
 
@@ -113,6 +111,7 @@ pivot = medianOfThree(unsorted)
 pivotToEnd(pivot, unsorted)
 itemFromLeft = getItemFromLeft(pivot, unsorted)
 itemFromRight = getItemFromRight(pivot, unsorted)
+swapIndex(unsorted, itemFromLeft, itemFromRight)
 
 
 
