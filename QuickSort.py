@@ -1,7 +1,8 @@
 unsorted=[0, 8, 5, 3, 20, 2, 9]
 #recursive algorithm
-#think pivot
+#keyword: pivot
 
+#The pivot is the point around which the rest of the array is sorted.
 #pivot MUST meet three conditions after being sorted
 #this is the win condition
 
@@ -69,7 +70,6 @@ def getItemFromLeft(pivot, array):
     i = 0
     seeker = array[i]
     while i <= len(array):
-        print("left seeker == ", seeker)
         if seeker >= pivot:
             return seeker
         i+=1
@@ -83,7 +83,6 @@ def getItemFromRight(pivot, array):
     seeker = array[i]
 
     while i >= 0:
-        print("right seeker == ", seeker)
         if array[i] < pivot:
             return seeker
         i -=1
@@ -92,7 +91,8 @@ def getItemFromRight(pivot, array):
     return seeker
         
 
-
+def swapIndex(array, left, right):
+    array[left], array[right] = array[right], array[left]
 
 
 #find itemFromRight, the first item from the right smaller than the pivot
@@ -101,6 +101,9 @@ def getItemFromRight(pivot, array):
     #swap itemFromLeft with pivot.
     #recursively call the function
 
+test = [1, 2]
+swapIndex(test, 0, 1)
+print(test)
 
 
 
@@ -110,8 +113,8 @@ pivot = medianOfThree(unsorted)
 pivotToEnd(pivot, unsorted)
 itemFromLeft = getItemFromLeft(pivot, unsorted)
 itemFromRight = getItemFromRight(pivot, unsorted)
-print(unsorted)
-#print(itemFromRight)
+
+
 
 
 
