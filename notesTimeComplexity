@@ -1,0 +1,65 @@
+Time Complexity is the analysis of the efficiency of a program.
+Defined as "The number of primitive operations executed, where n is the size of the input"
+
+We are measuring the amount of operations executed PER UNIT OF INPUT.
+
+
+Upper Bound Notation: O
+	Upper Bound (Big-O) Gives you the worst case scenario for an algorithm's time complexity. This is generally the number people are worried about
+Lower Bound Notation: Ω Greek Omega
+	Lower Bound (Big Ω) Gives you the best-case scenario for an algorithm's time complexity.
+Both upper and lower Bounds: θ Greek Theta
+	Tight Bound (Big-θ)Is used when the best-case and worst-case complexities are the same
+n==input
+
+
+Ideally, we want functions operations to grow as slow as possible with input. The more growth there is, the less efficient
+the program becomes with scale
+
+Time complexity equation: there is an equation but I literally can't find it online and nobody uses it I think my professor has ligma
+
+
+
+When analyzing the time complexity of an equation, we only care about the FASTEST growing equation.
+This is because the fastest growing section of the algorithm has the largest impact on efficiency, to the point that it becomes the only meaningful change in the program's effeciency per input.
+f(n) = 2n + 2
+g(n) = n^2
+
+Which of these grows faster? n^2!
+Therefore, the time complexity for this program is O(n^2)
+
+Exercise 2: 
+a(n) = n^2 + 3n +9
+b(n) = 2n^2
+
+a(n) and b(n) have the same time complexity! This is because we only are about the highest order term and do not care about constants
+therefore, in the context of time complexity O(n) == O(2n)
+
+
+
+
+
+Time Complexity speeds in ascending order: 
+Fast
+O(1) == constant: Number of operations is the same regardless of input size
+O(logn)
+
+Fair
+O(n)
+
+Bad
+O(nlogn)
+
+Worst
+O(n^c)
+O(c^2)
+O(n!)
+
+
+
+
+Common patterns and time complexity
+
+
+
+

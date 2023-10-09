@@ -1,0 +1,72 @@
+Quick Sort
+
+A recursive algorithm that quickly(heh) that uses a pivot to sort all numbers in array into
+two sections, numbers smaller than the pivot, and numbers larger than the pivot.
+
+Pivot any number in the array that satisfies three conditions after the sorting is complete
+Pivot conditions:
+1)Correct position in final, sorted array. 
+2)Items to the left are smaller
+3)Items to the right are larger.
+
+
+The actual pivot can be any number. Ideally you would pick a number thats close to the 
+median of the number set, but if you just chose the first number in the array every time
+that would technically work. 
+
+
+Median of three.
+Find first, middle, and last items of array.
+sort, then choose the middle number as your pivot
+In the given array  2 6 5 3 4 7 1 0 8
+The numbers would be 2, 4, 8, with 4 being chosen as the pivot. This doesn't always work out
+but it usually gives a number reasonably close to the median.
+
+ 
+Step1)Choose Pivot
+Step2)Move Pivot to end of array to get it out of way (I think this is unnecessary and makes it overly complicated.
+Useful for visual demonstrations but don't do it while actually coding)
+Step3)Look for two items, itemFromLeft and itemFromRight.
+	itemFromLeft: First item from the left that is greater than the pivot
+	itemFromRight:First item from the right that is smaller than the pivot.
+Step4)Swap itemFromLeft and itemFromRight
+Step5)Repeat until itemFromRight index >= itemFromLeft index
+Step6)Swap Pivot and itemFromLeft
+Step7)Done! This is all for the first instance of recursion. The data is currently sorted in two halves,
+but is not sorted within those halves. Recursively call quicksort until array.length = 1.
+Step8)Recursively call quicksort
+
+
+
+
+
+ Given Array:
+ 2 6 5 3 8 7 1 0
+ 
+3 is going to be our pivot.
+Move 3 to end
+
+2 6 5 0 8 7 1 3
+*note that the two numbers swap, not all pushed over
+itemFromLeft:6
+itemFromRight:1
+Swap 6 and 1
+
+2 1 5 0 8 7 6 3
+itemFromLeft:5
+itemFromRight:0
+Swap 5 and 0
+
+2 1 0 5 8 7 6 3
+itemFromLeft:5
+itemFromRight:0
+item from left index is greater than item from right index, therefore we are done
+Swap itemFromLeft with pivot.
+
+2 1 0 3 | 8 7 6 5
+Now the array is sorted into two halves around the pivot.
+Recursively sort until array.length == 0
+
+
+Easy way to swap without storage variables.
+arr[i], arr[j] = arr[j], arr[i]

@@ -1,0 +1,69 @@
+Sorting Algorithms
+I BELIVE these all have to do with arrays
+Each sorting algorithm has a known time complexity, and generally has a tradeoff of speed vs accuracy
+
+Use cases: Search engines, leaderboards, ranking systems, data sorting.
+The cool thing about these sorting algorithms is that they don't involve creating a new array or structure. 
+They rearrange data within the original structure, saving memory
+
+
+
+
+
+
+
+Insertion Sort
+Upper Bound: O(n^2)
+Lower Bound: O(n)
+The insertion sorting method revolves around a "wall". Data on the left of the wall is sorted, and data on the right is unsorted.
+The goal is to take the next number within the array (the key), sort it into the left side, then move the wall over one spot. 
+then repeat the process until the array is fully sorted.
+
+Cons: inefficient for larger datasets
+
+
+
+
+
+
+Algorithm Insertion-sort(A):
+	for i = 1 to A.length-1
+		key = A[i]
+		//insert key into sorted section
+		j = i-1
+		while j >= 0 and A[j] > key
+			A[j+1] = A[j]
+			j = j-1
+		A[j + 1] = key
+	
+	
+	
+	
+	Insertion Sort example. Keep in mind the key goes backwards through the array until it finds a number its less than
+	note* the wall is conceptually important but not actually represented through code.
+			|
+	[5] [7] | [3] [2] [1] [10]
+			|
+	^			^
+	Sorted		Unsorted
+				
+				|
+	[5] [7] [3] | [2] [1] [10] <- 7 > 3, therefore, they swap places.
+				|
+				
+				|
+	[5] [3]  [7]| [2] [1] [10] <- 5 > 3, therefore, they swap places.
+				|
+				
+				|
+	[3] [5] [7] | [2] [1] [10] <- j!= 0, meaning you've reached the beginning of the array and 3 is the first value. Done!
+				|
+
+	
+	
+	Best case vs worst case
+	Its always important to think of upper and lower bound!!
+	
+	worst case: The given array is already reverse sorted. For every iteration of the loop, the program will check every value and eventually
+	place the key at the beginning of the array. This is This is O(n^2)?
+	
