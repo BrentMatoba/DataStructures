@@ -68,19 +68,27 @@ def pivotToEnd(pivot, array):
 def getItemFromLeft(pivot, array):
     i = 0
     seeker = array[i]
-    while i <= len(array) and seeker <= pivot:
-        seeker = array[i]
+    while i <= len(array):
+        print("left seeker == ", seeker)
+        if seeker >= pivot:
+            return seeker
         i+=1
+        seeker = array[i]
+
     return seeker
 def getItemFromRight(pivot, array):
     
     #gets last item of array that is not the pivot
     i = len(array)-2
     seeker = array[i]
-    print(seeker)
-    while i <= 0 and array[i] < pivot:
+
+    while i >= 0:
+        print("right seeker == ", seeker)
+        if array[i] < pivot:
+            return seeker
         i -=1
         seeker = array[i]
+
     return seeker
         
 
