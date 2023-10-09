@@ -60,11 +60,34 @@ def medianOfThree(array):
     return mid
 
 def pivotToEnd(pivot, array):
+    #move pivot to final index of array
     array[pivot], array[len(array)-1] = array[len(array)-1], array[pivot]
-    #move pivot to final spot in array
-        #this isn't strictly necessary but probably better for humans
-    #find itemFromLeft, the first item from the left larger than the pivot
-    #find itemFromRight, the first item from the right smaller than the pivot
+
+
+#find itemFromLeft, the first item from the left larger than the pivot
+def getItemFromLeft(pivot, array):
+    i = 0
+    seeker = array[i]
+    while i <= len(array) and seeker <= pivot:
+        seeker = array[i]
+        i+=1
+    return seeker
+def getItemFromRight(pivot, array):
+    
+    #gets last item of array that is not the pivot
+    i = len(array)-2
+    seeker = array[i]
+    print(seeker)
+    while i <= 0 and array[i] < pivot:
+        i -=1
+        seeker = array[i]
+    return seeker
+        
+
+
+
+
+#find itemFromRight, the first item from the right smaller than the pivot
     #swap
     #repeat until itemFromLeft has a greater index than itemFromRight
     #swap itemFromLeft with pivot.
@@ -74,9 +97,14 @@ def pivotToEnd(pivot, array):
 
 
 
-print(unsorted)
+
 pivot = medianOfThree(unsorted)
 pivotToEnd(pivot, unsorted)
+itemFromLeft = getItemFromLeft(pivot, unsorted)
+itemFromRight = getItemFromRight(pivot, unsorted)
 print(unsorted)
+#print(itemFromRight)
+
+
 
     
