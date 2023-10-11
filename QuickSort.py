@@ -38,7 +38,7 @@ unsorted=[0, 8, 5, 3, 20, 2, 9]
 
 
 def checkLength():
-    if array.length > 2:
+    if array.length <= 2:
         return array
     else:
         #sort
@@ -47,20 +47,36 @@ def checkLength():
 
 def medianOfThree(array):
     #returns pivot point of array using medianOfThree technique
+    
+    firstIndex = 0
+    midIndex = len(array)//2
+    lastIndex = len(array)-1
+    
     first = array[0]
     mid = array[int(len(array)/2)]
     last = array[len(array) - 1]
     
     #sorts first, mid, and last numbers of array into ascending order
     #yes I am aware there is a sort() function in Python but for the purposes of this exercise I'm going to avoid using it.
-    if first > last:
-        first, last = last, first
     if first > mid:
-        first, mid = mid, first
-    if mid > last:
-        mid, last = last, mid
+        if first < last:
+            midIndex = firstIndex
+        elif mid > last:
+            midIndex = midIndex
+        else:
+            midIndex = lastIndex
+    elif first < mid:
+        if mid < last:
+            midIndex = midIndex
+        elif first > last:
+            midIndex = firstIndex
+        else:
+            midIndex = lastIndex
+    else:
+        midIndex = firstIndex
+
+    return midIndex
     
-    return mid
 
 def pivotToEnd(pivot, array):
     #move pivot to final index of array
@@ -71,7 +87,7 @@ def pivotToEnd(pivot, array):
 def getItemFromLeft(pivot, array):
     i = 0
     seeker = array[i]
-    while i <= len(array):
+    while i <= len(array)-1:
         if seeker >= pivot:
             return i
         i+=1
@@ -101,7 +117,7 @@ def splitList(array):
     midpoint = len(array)//2
     halfOne = array[:midpoint]
     halfTwo = array[midpoint:]
-    print(halfOne, halfTwo)
+    return halfOne, halfTwo
 #find itemFromRight, the first item from the right smaller than the pivot
     #repeat until itemFromLeft has a greater index than itemFromRight
     #swap itemFromLeft with pivot.
@@ -112,16 +128,27 @@ def splitList(array):
 
 
 
+def quickSort(array):
+    if len(array) <= 1:
+        return array
+    else:
+        pivot = medianOfThree(unsorted)
+        pivotToEnd(pivot, unsorted)
+        itemFromLeft = getItemFromLeft(pivot, unsorted)
+        itemFromRight = getItemFromRight(pivot, unsorted)
+        swapIndex(unsorted, itemFromLeft, itemFromRight)
+        halfOne, halfTwo = splitList(unsorted)
+        print(halfOne, halfTwo)
+        #divide array into two halves, each gets a recursion
+quickSort(unsorted)
+print(unsorted)
 
-pivot = medianOfThree(unsorted)
-pivotToEnd(pivot, unsorted)
-itemFromLeft = getItemFromLeft(pivot, unsorted)
-itemFromRight = getItemFromRight(pivot, unsorted)
-swapIndex(unsorted, itemFromLeft, itemFromRight)
-splitList(unsorted)
-#divide array into two halves, each gets a recursion
 
 
+#to'dos
+#remember to move pivot back
+#research recursion
+#finish quickSort recursion
 
 
     
