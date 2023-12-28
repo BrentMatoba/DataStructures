@@ -57,4 +57,16 @@ Abstract Data Types:
     Factorial Time: O(n!)
 
 
+3. Big-O properties:
+    We always remove constant values from Big-O computations because we are worried about whats happening as n approaches infinity.
+    In the context of infinity, constants will always mean nothing. However, note this approach is from a theoretical/mathematical perspective.
+    In real life, if your n is two billion or something, that will obviously have a notable effect on the running time on your program.
+
+    O(n + c) = O(n)
+    O(cn) = O(n), c>0
+
+    Let f be a function that describes the running time of a part icular algorithmn for an input of size n.
+    f(n) = 7log(n)^3 + 15n^2 + 2n^3 + 8
+        O(f(n)) = O(n^3)
+        This is because O(n^3) is the largest, most dominant rate of growth in this function.
     
