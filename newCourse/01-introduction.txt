@@ -51,7 +51,7 @@ Abstract Data Types:
     Logarithmic Time: O(log(n))
     Linear Time: O(n)
     Linearithmic Time:O(nlog(n))
-    Quadric Time: O(n^2)
+    Quadratic Time: O(n^2)
     Cubic Time: O(n^3)
     Exponential Time: O(b^n), b>1
     Factorial Time: O(n!)
@@ -99,3 +99,34 @@ Abstract Data Types:
             i = i+3
             f(n) = n/3
             O(f(n)) = O(n)
+
+
+
+
+    Quadratic Time:
+        Both of the following run in quadratic time. The first may be obvious since n work done
+        n times is n*n == O(n^2), but what about the second one?
+        a.
+            For (i = 0, i<n, i++){
+                For (j = 0, j<n, j++){
+                    
+                }
+            }
+            f(n) = n*n == n^2, O(f(n)) = O(n)
+
+        b.
+            For (i=0,i<n,i++){
+                for(j=i,j<n,j++)
+            }
+        I thought this was O(n), but I forgot that the second loop is used on EVERY iteration of the first loop, not after
+        the first loop is completely finished. - Brent
+
+        For a moment just focus on the second loop. Since i goes from [0,n) the amount of looping done is directly determined by what i is.
+        Remark that if i= 0, we do n work, if i = 1, we do n-1 work, if i=2, we do n-2 work, etc...
+
+        So the question then becomes what is: (n) + (n-1) + (n-2) + (n-3)....+ 3 + 2 +1?
+        Remarkably, this turns out to be n(n+1)/2, so 
+        O(n(n+1)/2) = O(n^2/2 + n/2) = O(n^2)
+        
+            
+        
