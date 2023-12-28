@@ -35,3 +35,26 @@ Abstract Data Types:
 
 
 2. Introduction to Computational Complexity Analysis.
+    As Programmers, we often find ourselves asking t he same two questions over and over again:
+    How much time does this algorithmn need to finish?
+
+    How much space does this algorithm need for its computation?
+
+    Big-0 Notation:
+        Big-O notationg gives an upper bound of the complexity in the WORST case, helpnig to quantify performance as the input size becomes arbitrarily large.
+
+        we're not really interested what happens when the input is small.
+
+    n: The size of the input.
+    Complexities organized smallest to largest
+    Constant Time: O(1)
+    Logarithmic Time: O(log(n))
+    Linear Time: O(n)
+    Linearithmic Time:O(nlog(n))
+    Quadric Time: O(n^2)
+    Cubic Time: O(n^3)
+    Exponential Time: O(b^n), b>1
+    Factorial Time: O(n!)
+
+
+    
