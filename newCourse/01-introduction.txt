@@ -70,3 +70,32 @@ Abstract Data Types:
         O(f(n)) = O(n^3)
         This is because O(n^3) is the largest, most dominant rate of growth in this function.
     
+
+4.Examples:
+    Constant Time O(1):
+    Meaning that they run the same no matter what the size of n is!
+    a.
+        a=1
+        b=2
+        c=a + 5*B
+
+    b.
+        i=0
+        While i < 11:
+            i = i+1
+
+    
+    Linear Time O(n):
+    a.
+        i = 0
+        While i < n:
+            i = i+1
+        
+        f(n) = n
+        O(f(n)) = O(n)
+    b. This is O(n) because /3 is dividing by a constant, which we erase.
+        i = 0
+        While i < n:
+            i = i+3
+            f(n) = n/3
+            O(f(n)) = O(n)
