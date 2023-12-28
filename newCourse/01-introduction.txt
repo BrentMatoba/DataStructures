@@ -1,0 +1,37 @@
+Data Structures: An Introduction
+https://www.youtube.com/watch?v=RBSGKlAvoiM&t=82s
+
+Contents:
+1.What is a data structure?
+2.Intro to Computational Complexity Analysis
+
+
+1. What is a data structure?
+A data structure (DS) is a way of organizing data so that it can be used effectively/effeciently.
+
+Why data structures?
+They are essential ingredients in creating fast and powerful algorithms. They help to manage and organize data.
+They make code cleaner and easier to understand.
+    Programmers who excel are ones that know how an when to use appropriate data structures.
+
+Abstract Data Types:
+    An abstract data type(ADT) is an abstraction of a data structure which provides only the interface to which a data structure
+    must adhere to.
+    The intereface does not give any specific details about how something should be implemented or in what programming language.
+
+    A metaphor:
+        Suppose the ADT is a mode of transportation, to get from point A to point B. There many forms available, like walking, or biking.
+        These specific modes of transportation are analagous to the data structures themselves.
+
+        Data structures are the concrete realizations of the abstract concepts defined by ADT's.
+
+        Examples
+        Abstraction:Implenmentation.
+        List:Dynamic Array/Linked List
+        Queue: LinkedList based queue/Array based Queue/Stack based queue
+        Map: Tree map/HashMap/Hashtable
+        Vehicle: GolfCart/Bicycle/Smart Car
+
+
+
+2. Introduction to Computational Complexity Analysis.
