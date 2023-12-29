@@ -1,0 +1,13 @@
+Static and Dynamic Arrays
+Why start here? Arrays are probably the most commonly used data structure.
+Arrays are the fundamental building block of all other data structures, so they end up everywhere.
+With arrays and pointers alone, you can construct almost any data structure.
+
+Outline:
+    1.Discussion and examples about Arrays
+        What is an array?
+        When and where is an array used?
+        Complexity
+        Static Array usage example
+    2.Dynamic array Implementation details
+    3.Code implementation
