@@ -5,9 +5,32 @@ With arrays and pointers alone, you can construct almost any data structure.
 
 Outline:
     1.Discussion and examples about Arrays
-        What is an array?
-        When and where is an array used?
-        Complexity
-        Static Array usage example
+        1.1What is an array?
+        1.2When and where is an array used?
+        1.3Complexity
+        1.4Static Array usage example
     2.Dynamic array Implementation details
-    3.Code implementation
+    3.Code implementation 
+
+
+
+1.Discussion and Examples:
+    1.1What is a static array?
+    A static array is af ixed length container containing n elements INDEXABLE from the range [0,n-1].
+        Common Q: What is it meant by being "indexable"?
+        A: This means that each slot/index in the array can be referenced with a number.
+        *continuous address in memory.
+
+    1.2: When and where is an array used?
+    Absolutely everywhere, to the point its difficult to make a program without one.
+
+    a.Storing and accessing sequential data
+    b. Temporarily storing objects
+    c. Used by IO routines as buffers
+        Imagine you're working with an extremely large data file, you can feed sections of the data as parts of an array 
+        into a data processing program.
+    d. Lookuptables and inverse lookup tables
+    e. Can be used to return multiple values from a function
+        packing/unpacking!
+    g. Used in dynamic programming to cache answers to subproblems
+        (advanced) knapsack problem, coin change problem
