@@ -1,6 +1,13 @@
 Data Structures: An Introduction
 https://www.youtube.com/watch?v=RBSGKlAvoiM&t=82s
 
+    Big-O notation of common algorithms
+    Finding all subsets of a set == O(2^n)
+    Finding all permutations of a string == O(n!)
+    Sorting using mergesort == O(nlog(n))
+    Iterating over all the cells in a matrix of size n by m == O(nm)
+
+
 Contents:
 1.What is a data structure?
 2.Intro to Computational Complexity Analysis
@@ -159,4 +166,3 @@ Abstract Data Types:
         Nested for loops where both loops run n times is N^2 
 
 
-    
