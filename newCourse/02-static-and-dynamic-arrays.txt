@@ -10,6 +10,7 @@ Outline:
         1.3Complexity
         1.4Static Array usage example
     2.Dynamic array Implementation details
+        2.1 Dynamic Array Source Code
     3.Code implementation 
 
 
@@ -35,8 +36,8 @@ Outline:
     g. Used in dynamic programming to cache answers to subproblems
         (advanced) knapsack problem, coin change problem
     
-
-    1.3 Complexity
+    
+    1.3 Time Complexity of Array Operations
         Static Array:
             Access: O(1)
             Search: O(n)
@@ -47,6 +48,16 @@ Outline:
         Dynamic Array:
             Access: O(1)
             Search: O(n)
-            Insertion: O(n)
+            Insertion: O(n) O(n) because you hae to potentially shift every single element over, depending on where you insert the new value
             Appending: O(1)
-            Deletion: O(n)
+            Deletion: O(n) Same as Insertion, if you delete a certain element, you will potentially have to shift over and rewrite EVERY element.
+    
+
+2. How to implement a dynamic array?
+    One way is to use a static array!
+    a. Create a static array with an initial capacity.
+    b. Add elements to the underlying static array, keeping track of the number of elements
+    c. If adding another element will exceed the capacity, then create a new static array with twice the capacity
+    copy the original elements into it.
+
+
