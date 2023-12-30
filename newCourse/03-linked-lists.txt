@@ -11,3 +11,24 @@ Outline:
         2.2 How to remove elements
     3. Complexity analysis
     4. Code implementation
+
+
+1. Discussion about Singly and Doubly Linked Lists
+    1.1: What is a linked list?
+        A linked list is a sequential list of nodes that hold data which point to other nodes also containing data
+        node -> node -> node -> null
+            *remember the last node always has a null pointer
+
+    1.2 Where are linked lists used?
+        a. Used in many lists, queue, and stack implementations.
+        b. Great for creating circular lists
+        c. Can easily model real world objects such as trains
+        d. Used in separate chaining, which is present certain Hashtable implementations to 
+        deal with hashing collisions
+        e. OFten used in the implementation of adjacency lists for graphs.
+
+    1.3 Terminology
+        Head: The first node in a linked list
+        Tail: The last node in a linked list
+        Pointer: Reference to another node
+        NOde: An object containing data and pointers
