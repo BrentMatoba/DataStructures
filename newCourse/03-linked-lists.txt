@@ -56,4 +56,13 @@ Outline:
             Cons:
                 Takes 2x memory
                     On a 64 bit machine, references take 8 bytes. On a 32 bit machine, 4 bytes.
-        
+    
+2.Implementation Details
+    2.1 How to insert new elements:
+        Single:
+            head -> 5 -> 23 -> 7  -> 13 <- tail
+            "Insert 11 where the node is."
+            1. Create 11 node, turn the pointer to 7.
+            2. Make 23's pointer 11.
+                *If you do reverse order, you destroy the only pointer to 11, and have no way
+                    to make 11's pointer 7.
