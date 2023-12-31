@@ -66,3 +66,30 @@ Outline:
             2. Make 23's pointer 11.
                 *If you do reverse order, you destroy the only pointer to 11, and have no way
                     to make 11's pointer 7.
+    2.2 Inserting with Doubly Linked List
+        Much trickier because of all the pointers flying around, but its the same concept.
+        2 <-> 23 <-> 7 <-> 13
+        Inserting 11.
+
+        1. Iterate through with the runner until you're at the preceding node to insertion point, in this case, 23.
+        2. make 11 point to 23 and 7.
+        3. make 7's previous pointer 11.
+        4. Make 23's next pointer 11
+    
+    2.3 Removing from Singly Linked list
+        Head -> 7 -> 0 -> 4 -> 9 -> 15 <-tail
+        1. Make TWO runners, one beginning at the head, and the second at the [1] index: 0
+        2. Advance runner 2 until we find the node we want to remove, while also incrementing runner1.
+        3. Create a temporary pointer for the element we want to remove (9) so that we can deallocate its memory later
+        (this is for non garbage collecting languages)
+        4. Increment runner 2 to element after removed item. (15)
+        5. Make runner1's node's pointer to runner2 node.
+        6. Delete removed node.
+
+    2.4 Removing from Doubly Linked List   
+        Actually easier
+        Head -> 7 -> 0 -> 4 -> 9 -> 15 <-tail
+        1. Only need 1 runner, iterate through until you find node you want.
+        2. Set 4's next pointer to 15.
+        3. Set 15's previous pointer to 4.
+        4. 9 is ready to be removed.
