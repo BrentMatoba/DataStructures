@@ -28,3 +28,19 @@ Stack:
         Used behind the scenes to support recursion by keeping track of previous function calls.
         Can be used to do a Depth First SearcH (DFS) on a graph.
     
+    1.3 Stack Time Complexity:
+        Pushing: O(1)
+        Popping: O(1)
+        Peeking: O(1)
+        Searching: O(n)
+        Size: O(1)
+
+    1.4 Example: brackets
+        Problem: Given a string made up of the following brackets: ()[]{}, determine whether the brackets
+        properly match.
+
+        [{}]
+        (()())
+        {]
+        [()]))()
+        []{}(){}
