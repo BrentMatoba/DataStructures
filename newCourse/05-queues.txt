@@ -23,3 +23,9 @@ Outline
         Enqueue == Adding == Offering
             ADDING AN ITEM TO THE Queue
         Dequeue == polling == removing.
+    1.3 When and where is a queue used?
+        Any waiting line models a queue, for example, a lineup at a movie theater.
+        Can be used to effeciently keep track of the x most recently added elements.
+        Web server request management where you want first come first serve.
+        Breadth first search (BFS) graph traversal.
+        
