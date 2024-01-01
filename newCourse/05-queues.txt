@@ -28,4 +28,10 @@ Outline
         Can be used to effeciently keep track of the x most recently added elements.
         Web server request management where you want first come first serve.
         Breadth first search (BFS) graph traversal.
-        
+    1.4 Time Complexity Analysis
+        Enqueue: O(1)
+        Dequeue: O(1)
+        Peeking: O(1) //checking first item of queue
+        Contains: O(n) //would have to iterate through whole list to find item
+        Removal: O(n) //actually remove item from list, NOT dequeueing in order. Would have to potentially scan entire list.
+        isEmpty: O(1)
