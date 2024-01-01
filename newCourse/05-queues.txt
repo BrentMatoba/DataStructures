@@ -11,3 +11,15 @@ Outline
         2.1 How to enqueue(add) elements to a queue
         2.2 How to dequeue (remove) elements from a queue.
     3. Code implementation
+
+
+1. Discussion
+    1.1 What is a queue.
+        A queue is a linear data strucutre which models real world queuees by having two primary operations.
+        Namely, enqueue and dequeue.
+
+    1.2 Terminology
+        There does not seem to be cnsistent Terminology for inserting and removing elemetns from queues.
+        Enqueue == Adding == Offering
+            ADDING AN ITEM TO THE Queue
+        Dequeue == polling == removing.
