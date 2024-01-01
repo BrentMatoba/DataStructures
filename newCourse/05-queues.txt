@@ -35,3 +35,18 @@ Outline
         Contains: O(n) //would have to iterate through whole list to find item
         Removal: O(n) //actually remove item from list, NOT dequeueing in order. Would have to potentially scan entire list.
         isEmpty: O(1)
+
+
+2. Implementation
+    Rewatch the queue implementation section.
+    Let Q be a queue:
+    Q.enqueue(starting_node)
+    starting_node.visited = true;
+
+    While Q is not empty:
+        node = Q.dequeue()
+        
+        for neighbor in neighborhood(node):
+            if niehgbor has not been visited:
+                neighbor.visited = true;
+                Q.enqueue(neighbor)
