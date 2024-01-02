@@ -51,4 +51,10 @@ Outline:
             This is true to the point that the terms often used interchangeably, although that
             practice is technically not correct.
 
-        
+    1.3 When and where is a priority queue/heap used?
+        Used in certain implementation of Dijkstra's shortest path algorithm(?)
+        Anytime you need to dynamically fetch the "next best" or the "next worst" element.
+        Used in Huffman coding (which is often used for lossless data compression.)
+        Best First Search (BFS) algorithms such as A* use priority queues to continuously
+            grab the next most promising node.
+        Used by minimum spanning tree (mst) algorithms
