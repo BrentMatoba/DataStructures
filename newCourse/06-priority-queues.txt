@@ -39,3 +39,16 @@ Outline:
 
 
         WHAT DOES THIS MEAN:
+        The value of the parent node is always greater to or equal to than the child node.
+        (for max heaps, the opposite is true for min heaps.)
+            if there is a violation, where the child is greater than the parent, the structure
+            does NOT qualify as a heap.
+
+        Binary heaps: A heap where each node has exactly two children.
+
+        Why do we care about heaps?
+            Heaps are the underlying Abstract Data Type for the priority queue data structure.
+            This is true to the point that the terms often used interchangeably, although that
+            practice is technically not correct.
+
+        
