@@ -23,3 +23,19 @@ Outline:
         *NOTE: Priority queues only support COMPARABLE data, meaning that the data inserted into the
         priority queue must be able to be ordered in some way either from least to greatest or
         greatest to least. This is so we are able to assign relative priorities to each element.
+    
+        poll() == remove the element with the highest priority.
+
+        Question: How does the poll() know which item to pull?
+            Answer: HEAP!
+
+    1.2 What is a heap?
+        A heap is a tree based data strucutre that satisfies the heap invariant 
+        (also called the heap property.): If A is a parent node of B, then A is ordered with
+        respect to B for all nodes A, B in the heap.
+
+        max heap: tree/heap with larger numbers at the top, with descending order as you go down the tree.
+        min heap: Has smallest numbers at the top, with increasing values as you go down the tree.
+
+
+        WHAT DOES THIS MEAN:
