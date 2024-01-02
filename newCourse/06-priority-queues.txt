@@ -1,0 +1,14 @@
+Priority Queues (PQs) with an interlude on heaps
+
+Outline:
+    1. Discussion and examples of PQ's
+        1.1 What is a PQ?
+        1.2 What is a heap?
+        1.3 When and where is a PQ used?
+        1.4 How to turn a min priority queue into a max priority queue.
+        1.5 Complexity Analysis.
+    2. Binary heap priority queue implementation details.
+        2.1 Heap sinking and swimming (also called sift down/sift up or bubble up/bubble down)
+        2.2 Adding eleemnts to priority queue.
+        2.3 Removing (polling) eleemnts from priority queue.
+    3. Code Implementation
