@@ -83,4 +83,10 @@ Outline:
     within the data structure.
 
     Example:
-        Let
+        Let x, y be numbers in the PQ. for a min pq, if x<= y, then x comes out of the pq before
+        y, so the negation of this is x>=y, then y comes out before x.
+    
+        An alternative method for numbers is to negate the numbers as you insert them into the PQ
+        and negate them again when they are taken out. This has the same effect as negating the comparator.
+
+        lexicographically: pertaining to dictionaries?
