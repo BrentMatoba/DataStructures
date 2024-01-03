@@ -97,3 +97,17 @@ Outline:
     the only way to implement PQ's. As an example, we could use an unsorted list, but this would
     not give us the best possible time complexity.
     
+3.1 Priority Queue with Binary Heap
+    The are MANY types of heaps we could use to implement a priority queue including:
+        1. Binary heap
+        2. Fibonacci heap
+        3. Binomial Heap
+        4. Pairing Heap
+    
+    A binary heap is a binary tree that supports the heap invariant. In a binary tree, every node
+    has exactly two children. This includes NULL children. The bottom children technically have 
+    null children, thus satisfying the heap invariant, but these aren't usually noted and aren't
+    considered important.
+
+    A complete binary tree is a tree inwhich at every level, except possibly the last is completely
+    filled and all the nodes are as far left as possible.
