@@ -58,3 +58,15 @@ Outline:
         Best First Search (BFS) algorithms such as A* use priority queues to continuously
             grab the next most promising node.
         Used by minimum spanning tree (mst) algorithms
+    
+    1.4 Time Complexity: Priority queue with binary heap
+        Binary Heap Construction: O(n)
+            Forms the basis for sorting algorithms
+        Polling: O(log(n))
+        Peeking: O(1)
+        Adding: O(log(n))
+        Naive Removing(?):O(n)
+        Advanced removing with help from a hash table*: O(log(n))
+        Naive contains: O(n)
+        Contains check with help of a hash table: O(1)
+        
