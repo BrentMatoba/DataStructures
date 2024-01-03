@@ -69,4 +69,18 @@ Outline:
         Advanced removing with help from a hash table*: O(log(n))
         Naive contains: O(n)
         Contains check with help of a hash table: O(1)
-        
+
+2. Turning Min PQ into Max PQ'
+    Why is this important?
+    Problem: Often the standard library of most programming languages only provide a min priority
+    queue or a max priority queue. They rarely support both. Most common is minimum priority queues,
+    which sort by smallest elements first, but sometimes we need a max priority queue!
+
+    Since elements in a priority queue are comparable, they implement some sort of comparable
+    interface which we can simply negate to achieve a max heap.
+
+    note* priority queues often don't have literal pointers, and rely on the positioning of the elements
+    within the data structure.
+
+    Example:
+        Let
