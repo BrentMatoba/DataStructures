@@ -40,3 +40,11 @@ Outline
         Get component size:amortized constant time
         Check if connected:amortized constant time
         Count components: O(1) GREAT
+
+2. Implementation Details
+    2.1 Kruskal's minimum spannign tree.
+        Given a graph G = (V, E) we wantt o fin da  minimum spanning tree in the graph
+        (it may not be unique). A minimum spanning tree is a subset of the edges which connect
+        all vertices in the graph witht he minimal total edge cost.
+    2.2 Kruskal's tree explained.
+        
