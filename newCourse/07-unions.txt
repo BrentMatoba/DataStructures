@@ -11,3 +11,18 @@ Outline
     Find and Union operations
     Path compression
 3. Code Implementation.
+
+ 1.Dicussion and Examples.
+    1.1 What is a Union Find?
+        A Union Find is a data structure that keeps track of elements which are split into one or 
+        more disjoint sets. It has two primary operations, find() and union()
+
+    CHATGPT because I am confused: 
+    Union Find is a data structure used to keep track of elements divided into groups or sets. It's 
+    really good at two things: combining groups together and finding out which group a particular
+    element belongs to. Imagine you have lots of islands, and you want to connect them with bridges
+    . Union Find helps you keep track of which islands are connected. So, whenever you want to 
+    connect two islands (or elements), you use the "union" part. And when you want to check if two
+    islands are already connected, you use the "find" part. It's like a quick way to manage and 
+    check connections between things.
+    
