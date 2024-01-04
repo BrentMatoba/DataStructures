@@ -1,0 +1,13 @@
+Union Find! (AKA disjoint set)
+
+Outline
+1. Discussion and examples
+    What is a Union Find?
+    Magnets example
+    When and where is a Union Find used?
+    Kruskal's minimum spanning tree algorithm
+    Complexity Analysis.
+2. Implementation Details
+    Find and Union operations
+    Path compression
+3. Code Implementation.

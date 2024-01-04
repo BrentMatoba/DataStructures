@@ -111,3 +111,6 @@ Outline:
 
     A complete binary tree is a tree inwhich at every level, except possibly the last is completely
     filled and all the nodes are as far left as possible.
+
+3.2 Adding Elements to Priority Qeueu.
+    Finish
