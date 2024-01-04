@@ -54,3 +54,9 @@ Outline
         c. The algorithm terminates when every edge has been processed or all the vertices
         have been unified.
     2.3 Union and Find Operations
+        Creating Union Find
+            To begin using Union Find, first construct a bijection (a mapping) between your objects
+            and the integers in the range [0, n]
+
+            Note: This step is not necessary in general, but it will allow us to construct an array-based
+            union find.
