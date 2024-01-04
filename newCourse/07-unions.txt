@@ -47,4 +47,10 @@ Outline
         (it may not be unique). A minimum spanning tree is a subset of the edges which connect
         all vertices in the graph witht he minimal total edge cost.
     2.2 Kruskal's tree explained.
-        
+        a. Sort edges by ascneding edge weight.
+        b. Walk through the sorted edges and look at the two nodes the edge belongs to, if the
+        nodes are already unified we don't include this edge, otherwise we include it and unify
+        the nodes.
+        c. The algorithm terminates when every edge has been processed or all the vertices
+        have been unified.
+    2.3 Union and Find Operations
