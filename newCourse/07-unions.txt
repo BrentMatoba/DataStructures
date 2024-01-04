@@ -26,3 +26,17 @@ Outline
     islands are already connected, you use the "find" part. It's like a quick way to manage and 
     check connections between things.
     
+    1.3 When and where is a Union Find used?
+        Kruskal's minimum spanning tree algorithm.
+        Grid percolation
+        Network connectivity
+        Least common ancestor in trees
+        Image processing.
+
+    1.4 Time Complexity.
+        Construction: O(n) (not bad)
+        Union: amortized constant time
+        Find: amortized constant time
+        Get component size:amortized constant time
+        Check if connected:amortized constant time
+        Count components: O(1) GREAT
