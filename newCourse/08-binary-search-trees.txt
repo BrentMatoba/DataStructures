@@ -27,3 +27,18 @@ Binary Trees and Binary Search Trees (BST)
             our tree (similar to the head of alinked list I think)
             It does not always matter which node is selected to be the root node because 
             any node can root the tree.
+
+            A child is a node extending from another node. A parent is the inverse of this.
+            A root node has no parent, but sometimes its useful to set the roots parent to itself.
+                A common example of this is in filessystems 
+            
+            A leaf node is a node with no children.
+
+            A subtree is a tree entirely contained within another. They are usually denoted
+            with triangles.
+
+            A binary tree is a tree for which every node has at most two child nodes (so one is ok)
+        
+        1.2 Which is a binary search tree?
+            A binary search tree is a binary tree that satisfies the BST invariant.
+            "LEft subtree has smaller elements and right subtree has larger elements.
