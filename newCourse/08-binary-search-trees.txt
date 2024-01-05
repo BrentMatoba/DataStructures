@@ -13,3 +13,17 @@ Binary Trees and Binary Search Trees (BST)
             2.3 Binary Tree transversals
                 Preorder, inorder, postorder, and level order traversals.
         3. Source code
+
+
+    1.
+        1.1 What is a binary tree?
+            A tree is an undirected graph which satisfies any of the folowing definitions.
+                An acyclic connected graph (No circles)
+                A connected graph with N nodes and N-1 edges.
+                A graph in which any two vertices are connected by exactly one path.
+        
+            Rooted Tree is a tree with a top node.
+            If we have a rooted tree, thenwe w ill want to have a reference to the root node of 
+            our tree (similar to the head of alinked list I think)
+            It does not always matter which node is selected to be the root node because 
+            any node can root the tree.
