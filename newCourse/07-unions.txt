@@ -77,3 +77,12 @@ Outline
 
             THe number of components is equal to the number of roots remaining. Also, remark that the 
             number of root nodes never increases.
+
+
+            Our current version of Union Find does not support the nice alp;ha(n) time complexity we want.
+            Checking if H and B bleong to the same group takes five hops and in the cworst case 
+            this is potentially much more.
+    
+    2.4 Path Compression Union Find
+        THIS IS WHAT MAKES THE STRUCTURE SO EFFECIENT.
+        Come back and finish this.
