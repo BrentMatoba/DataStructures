@@ -42,3 +42,15 @@ Binary Trees and Binary Search Trees (BST)
         1.2 Which is a binary search tree?
             A binary search tree is a binary tree that satisfies the BST invariant.
             "LEft subtree has smaller elements and right subtree has larger elements.
+
+            A tree with duplicate values is SOMETIMES considered a binary search tree.
+            BST operations allow for duplicat e values, but most of the time we are usually
+            interested in having unique elements in our tree.
+
+            Binary search trees are NOT limited to numbers, any data can be used as long
+            as its comparable.
+
+        *This data structure is very strange. The requirements for it to exists seem so exact
+        that it seems unbelievable this kind of data set would ever occur naturally.
+
+        
