@@ -70,3 +70,16 @@ Binary Trees and Binary Search Trees (BST)
             Remove(): Average:O(log(n)), Worst O(n)
             Search(): Average:O(log(n)), Worst O(n)
 
+                Trees are generally speaking quite fast. Worst case is O(n) which is bad, but not the Worst
+    2. Operations
+        2.1 Adding Elements to a binary search tree
+            Binary Search Trees (BST) elements must be COMPARABLE so taht we can order them inside the tree.
+            
+            When an inserting an element, we want to compare its value to the value stored in the current
+            node we're considering to decide on one of the following.
+
+            We can recurse down the left subtree(< case), recurse down the right subtree(> case),
+            handle findng a duplicate value (= value), or create a new node(leaf node)
+                *need to look at implemnetation:
+
+        
