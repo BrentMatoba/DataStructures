@@ -82,4 +82,17 @@ Binary Trees and Binary Search Trees (BST)
             handle findng a duplicate value (= value), or create a new node(leaf node)
                 *need to look at implemnetation:
 
-        
+        2.2 Removing elements from a Binary Search Tree (BST) can be seen as a two step process
+            a. Find the element we wish to remove (if it exists)
+            b. Replace the node we want to remove with its successor (if any) to maintain the
+            BST invariant.
+                RECALL THE BST INVARIANT: LEFT SUBTREE HAS SMALLER ELEMENTS AND RIGHT SUBTREE
+                HAS LARGER ELEMENTS
+            
+            1. Find Phase:
+                WHen searching our BST for a node with a particular value, one of four things will happen.
+
+                a. We hit a null node at which point we know the value does not exist within our BST
+                b. Comparator value equal to 0 (found it!)
+                c. Comparatgor value less than 0 (the value if it exists, is in the left subtree)
+                d. Comparator value greater than 0(the value, if it exists, is in the righ subtree)
