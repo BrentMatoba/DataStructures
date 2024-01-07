@@ -96,3 +96,11 @@ Binary Trees and Binary Search Trees (BST)
                 b. Comparator value equal to 0 (found it!)
                 c. Comparatgor value less than 0 (the value if it exists, is in the left subtree)
                 d. Comparator value greater than 0(the value, if it exists, is in the righ subtree)
+
+            2. Remove Phase:
+                Essentially, there are four cases in the remove phase.
+                    a. Node to remove is a leaf node
+                    b. Node to remove has a right usbtree but no left subtree.
+                    c. Node to remoev has a left subtree but no right subtree.
+                    d. Node to remoe has both a left subtree and a right subtree
+                    
