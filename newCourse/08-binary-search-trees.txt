@@ -127,4 +127,10 @@ Binary Trees and Binary Search Trees (BST)
                             b. Is smaller than everything in right subtree because it was found in the left subtree.
                         
 
-                     
+                        The SMALLEST value in the right subtree satisfies the BST invariant since it:
+                            a. Is smaller than everything in right subtree. This follows immediately from the definition
+                            of being the smallest.
+                            
+                            b. is larger than everything in the left subtree because it was found in the right subtree.
+
+                            SO there are two possible sucessors, yay!
