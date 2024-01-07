@@ -103,4 +103,7 @@ Binary Trees and Binary Search Trees (BST)
                     b. Node to remove has a right usbtree but no left subtree.
                     c. Node to remoev has a left subtree but no right subtree.
                     d. Node to remoe has both a left subtree and a right subtree
-                    
+
+                How to remove case a: Leaf Node
+                    If the node we wish to remove is a leaf node, then we may do so without any side effect!
+                    Suppose we want to remove 8 from t he BST, First we would find 8 then immediately remove it since its a leaf node.
