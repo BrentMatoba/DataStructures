@@ -114,3 +114,17 @@ Binary Trees and Binary Search Trees (BST)
 
                     It may be the case that youare removing the root node of the BST in which case its immediate child becomes the new root
                     as you would expect.
+
+                How to remove case 4: Node to remove has both a left subtree and a right subtree.
+                    Q. In which subtree will the successor of the node we are trying to remove be?
+                    A: Both! The sucessor can either be the largest value in the left subtree OR the smallest
+                    value in the right subtree.
+
+                    A justification for why there could be more than one successor is:
+                        The LARGEST value in the the left subtree satisfies the BST invariant since it:
+                            a. Is larger than everything in left subtree.
+                                This follows immediately from the definition of being the largest.
+                            b. Is smaller than everything in right subtree because it was found in the left subtree.
+                        
+
+                     
