@@ -134,3 +134,7 @@ Binary Trees and Binary Search Trees (BST)
                             b. is larger than everything in the left subtree because it was found in the right subtree.
 
                             SO there are two possible sucessors, yay!
+        2.3 Tree traversals
+            Preorder, inorder, postorder, level order
+                preorder, inorder, postorder, are naturally defined recursively.
+                
