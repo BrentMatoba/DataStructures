@@ -14,4 +14,27 @@ Outline:
     Separate chaining HT source code.
 
 
+    Open addresssing techniques. implemnetation details
+        Linear probing
+            what is linear probing?
+            chaos with cycles
+            linear probing insertion Examples
+            table resizing and updating values
+        Quadratic probing   
+            what is quadratic probing?
+            problem siwth probing sequence cycles
+            different ways to quadratically problem
+            inserting/resize Examples
     
+    Double Hashing
+        Whatg is double hashing? How does it work?
+        Chaos with cycles
+        Constructin ga new hash function 
+            Universal hash functions
+        Inserting/resize example
+
+        Removing elements
+            Solution using tombstones
+            Lazy deletion/relocation
+            lots of Examples
+            
