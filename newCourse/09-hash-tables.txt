@@ -1,0 +1,15 @@
+Hash Tables
+"one data strucure to rule them all"
+
+Outline:
+    What is a Hash Table? and what is a hash function?
+    Properties of hash functions?
+    Discussion on collision resolution methods, in particular:
+        separate chaining and open addressing
+    Complexity analysis.
+    Separate chaining implementation details
+        Linked list approach overview
+        separate chaining FAQ's
+        Separate chaining source code
+    Separate chaining HT source code.
+    
