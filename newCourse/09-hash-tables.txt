@@ -37,4 +37,12 @@ Outline:
             Solution using tombstones
             Lazy deletion/relocation
             lots of Examples
-            
+
+
+What is a hash table?
+     A hash table (HT) is a data strucutre that provides a mapping from keys to values using 
+     a technique called hashing. (ALSO CALLED DICTIONARY)
+     Key value pairs, keys must be unique, but values can be repeated.
+     
+     HTs are often used to track item frequencies. For instance, counting the number of times a 
+     word appears in a given text.
