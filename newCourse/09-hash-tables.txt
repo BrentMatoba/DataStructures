@@ -60,3 +60,12 @@ What is a hash table?
     Q: How can weuse this to our advantage to speedup object comparisonS?
     A: This means that instead of comparing x and y directly, a smarter approach is to first compare their
     hash values, and only if the hash values match do we need to explicitly compare x and y.
+
+Properties of Hash Functions:
+    Consider the problem of trying to determine if two very large files have the same contents.
+    If we precomputed H(fil1) and H(file2) first we should compare those hash values since comparing
+    hash values is O(1)! If possible, we do not want to copen either of the fiels directly. comparing
+    their  contents can be very slow, although we may have to if H(file1) == H(file2)
+
+        *note: Hash functions for files are more sophisticated that those used for hashtables. instead
+        for files we use what are called cyptographic hash functions also called checksums.
