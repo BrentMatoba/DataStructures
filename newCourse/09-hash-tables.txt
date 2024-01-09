@@ -46,3 +46,11 @@ What is a hash table?
      
      HTs are often used to track item frequencies. For instance, counting the number of times a 
      word appears in a given text.
+    
+    A hash function H(x) is a function that maps a key "x" to a whole number in a fixed range.
+    
+
+    We can also define hash functions for arbitray objects such as strings, lits, tuples,
+    multi data objects, etc...
+
+    for a string s let H(s) be a hash function defined below ehre ASCII(x) returns tot he ASCII value of the character x
