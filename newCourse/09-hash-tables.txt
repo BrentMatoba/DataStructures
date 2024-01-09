@@ -74,4 +74,15 @@ Properties of Hash Functions:
         Hash functions H(x) MUST be deterministic.
             THis means that if H(x) == y, then H(x) must always produce y and never another value.
             This may seem ohvious, but is critical to the functionality of a hash function.
-            
+
+        WE try very hard to make uniform hash functions to minimize the number of hash colisions
+        A hash colision is when two bojects x, y hash to the same value.
+
+        We are now able to answer a centrla questions about the types of keys we are allowed to use
+        in our hashtables
+        Q: WHat makes a key of Type T hashable?
+        A: Since we are going to use hash functions in the implementation of our hash table we need
+        our hash functions to be deterministic.
+        To enforcethis behavior, we demand that the keys used in our hash table are immutable data types.
+        Hence, if a key of some type T is immutable, and we have a hash function H(k) defined for all
+        keys k of type T then we say a key of type Tis hashable.
