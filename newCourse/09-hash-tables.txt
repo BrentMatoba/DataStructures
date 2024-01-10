@@ -113,3 +113,12 @@ Time Complexity:
 
     The constant time behavior is attributed to hash tables is only true if you have a good uniform
     hash function!
+
+
+What is separate chaining:
+    Separate chaining is one of many strategies to deal with has collisions by maintaing a data structure
+    (usually a linked list) to hold all the different values hwich hased to a particular value.
+
+    *NOTE: The data strucutre used to cache the items which hjased to a particular value is not
+    limited to a linked list. Some implementations use oe or a mixture of: arrays, binary trees,
+    self banacing trees and etc...
