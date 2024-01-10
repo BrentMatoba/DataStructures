@@ -86,3 +86,10 @@ Properties of Hash Functions:
         To enforcethis behavior, we demand that the keys used in our hash table are immutable data types.
         Hence, if a key of some type T is immutable, and we have a hash function H(k) defined for all
         keys k of type T then we say a key of type Tis hashable.
+
+How does a hash table work?
+    Ideally we would like to have a very fast insertion, lookup and removal time for the data we are 
+    placing within our hash table. Remarkably, we can achieve all this in O(1) time using a hash
+    function as a way to index into a hash table.
+
+    *The constant time behavior attributed to hash tables is only true if you have a good uniform hash function!
