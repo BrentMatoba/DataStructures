@@ -122,3 +122,9 @@ What is separate chaining:
     *NOTE: The data strucutre used to cache the items which hjased to a particular value is not
     limited to a linked list. Some implementations use oe or a mixture of: arrays, binary trees,
     self banacing trees and etc...
+
+Hash Table FAQs
+    Q: How do I maintain O(1) insertion and lookup time complexity one my HT gets really full and I have
+    long linked list chains?
+    A: Once the HT ocntains a lot of elements you should cratae a new HT with a larger capacity and rehash all
+    the items inside the old HT and disperate them throughought the new HT at different locations.
