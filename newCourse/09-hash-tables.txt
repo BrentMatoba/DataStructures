@@ -104,4 +104,12 @@ How does a hash table work?
 
     Open addressing: deals with hash collisions by finding anohter place within the hash table for the object
     to go by offsettting it from the position to which it hashed to.
-    
+
+
+Time Complexity:
+    Insertion: Average: O(1), Worst O(n)
+    Removal: Average: O(1), Worst O(n)
+    Search: Average: O(1), Worst O(n)
+
+    The constant time behavior is attributed to hash tables is only true if you have a good uniform
+    hash function!
