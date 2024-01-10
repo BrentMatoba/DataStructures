@@ -93,3 +93,15 @@ How does a hash table work?
     function as a way to index into a hash table.
 
     *The constant time behavior attributed to hash tables is only true if you have a good uniform hash function!
+
+
+    What do we do if there is a hash collision?
+    A: We use on of many hash collision resolution techniques to handle this, the two more popular ones
+    are separate chaining a open addressing.
+
+    Separate chaining deals with hash collisions by maintaing a data structure (usually a linked list)
+    to hold all the different values which hashed to a particular value.
+
+    Open addressing: deals with hash collisions by finding anohter place within the hash table for the object
+    to go by offsettting it from the position to which it hashed to.
+    
