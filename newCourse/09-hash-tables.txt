@@ -137,3 +137,12 @@ Hash Table FAQs
     A: Of course! Common data strucutres used instead of alinked list include: arrays, binary t rees, self balanacing trees,
     etc... You can even go with a hybrid approach like java's HashMap. However, note that some of these are much more memory
     intensive and complex to implement than a simple linked list which is why they may be less popular.
+
+
+Hash Table Open Addressing
+    The goal of the Hash Table is to construct a mapping from keys to values.
+    Keys must be hashable and we need a hash function taht converts keys to whole numbers.
+    We use the hash function defined on our key set to index into an array ( the hash table.)
+    Hash functions are not perfect, there fore sometimes two keys, k1, k2, hash to the same value.
+    When this happens, we have a hash collision.
+    Open addresssing is a way to solve this issue.
