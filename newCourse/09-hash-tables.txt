@@ -146,3 +146,12 @@ Hash Table Open Addressing
     Hash functions are not perfect, there fore sometimes two keys, k1, k2, hash to the same value.
     When this happens, we have a hash collision.
     Open addresssing is a way to solve this issue.
+
+    When using open addressing as a collision resolution technique the key-value pairs are stored in teh table(array)
+    itself as opposed to a data strucutre lik ein separate chaining.
+
+    THis means we need to care a great deal about the size of our hash table and how many elements are currenlty in the table.
+    Load factor = items in table/size of table.
+
+    The O(1) constant time bheavior attributed to hash tables assumes the load factor is kept below a certain threshold value.
+    This means once the load factor is above the threshold, we need to grow the table size (ideally exponentially, e.g. double the size.)
