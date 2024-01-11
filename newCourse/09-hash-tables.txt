@@ -164,3 +164,14 @@ Open addressing main idea:
     position subject to a probing sequence P(x). We keep doing this until an unoccupied slot is found.
     
     There are an infinite amount of probing sequences you can come up with
+    Linear probing:
+        P(x) = ax + b where a, b are constants
+
+    Quadratic probing:
+        P(x) = ax^2 + bx + c where a, b, c are constants.
+    
+    DOuble Hasing:
+        P(k,x) = x*H^2(k) where H^2(k) is a secondarfy hash funciton.
+    
+    Pseudo random number geneerator:
+    OP(k,x) = x*RNG(H(k), x) where RNG is a random number generator function seeded with H(k).
