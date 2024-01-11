@@ -128,3 +128,12 @@ Hash Table FAQs
     long linked list chains?
     A: Once the HT ocntains a lot of elements you should cratae a new HT with a larger capacity and rehash all
     the items inside the old HT and disperate them throughought the new HT at different locations.
+
+    Q: How do I remove key-value pairs from my HT?
+    A: Apply the same procedure as doing a lookup for a key, but this time instead of returning the value associated
+    with they key, remove the node in the linked list structure.
+
+    Q: Can I use another data structure ot model the bucket behavior required for the separate chaining method?
+    A: Of course! Common data strucutres used instead of alinked list include: arrays, binary t rees, self balanacing trees,
+    etc... You can even go with a hybrid approach like java's HashMap. However, note that some of these are much more memory
+    intensive and complex to implement than a simple linked list which is why they may be less popular.
