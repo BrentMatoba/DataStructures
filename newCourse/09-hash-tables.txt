@@ -188,3 +188,15 @@ Linear Probing:
     A: This hapens when a and N are relatively prime. Two numbers are lreatively prime if their
     greatest common denominator (GCD) is equal to one. Hence, whene GCD (a,N) = 1 the probing funciton.
     P(x) be able to generate a complete cycle and we will always be able to find an empty bucket.
+
+Inserting with linear probing:
+    Suppose we have an originally empty hash table and w ant to insertg some (Ki, Vi) pairs with LP and
+    we selected our hash table toh ave:
+        proibg function
+        fixed table size
+        max load factor
+        Threshold before resize
+    
+    Q: Based on the selected probibng P(x) and the table size are we likely to eventualy get an infinite loop when inserting?
+    A: YESS! GCD(N,a) = GCD((9,6) = 3 is not 1!)
+    Go over this again.
