@@ -175,3 +175,11 @@ Open addressing main idea:
     
     Pseudo random number geneerator:
     OP(k,x) = x*RNG(H(k), x) where RNG is a random number generator function seeded with H(k).
+
+
+
+Linear Probing:
+    Linear Probing is  probing method which probes according to a linear formula, specifically:
+    P(x) = ax + b where a!=0, b are constants. (THE constant b is obselete, do you know why?)
+        However, as we previously saw not all linear functions are viable because they are unable
+        to produce a cycle of order N. we will need some way to handle this.
