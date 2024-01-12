@@ -1,0 +1,13 @@
+Hash Table Double Hashing
+    Open Addressing main idea
+    General insertion method for open addressing on a table of size N goes:
+    x = 1
+    keyHash = H1(k) mod nindex = keyHash
+    
+    while table[inx] != null
+        index = (keyhash + P(k,x)) mod N
+        x = x+1
+
+    insert (k,v) at table[index]
+
+    Where Hx(k) is the hash for the key k and P(k,x) is the probing function
