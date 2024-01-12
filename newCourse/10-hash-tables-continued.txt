@@ -11,3 +11,13 @@ Hash Table Double Hashing
     insert (k,v) at table[index]
 
     Where Hx(k) is the hash for the key k and P(k,x) is the probing function
+
+
+
+What is double hashing?
+    Double hashing is a probing method which probes according to a constant multiple ofanother hash
+    fucntion, specifically:
+    P(k,x) = x*H2(k) where H2(k) is a second hash function
+    H2(k) must hash the same type of keys as H1(k)
+        NOTE: Notice that doubling hashing reduces to linear probing (except that the constant is unknown until runtime)
+    
