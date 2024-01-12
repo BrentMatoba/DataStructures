@@ -52,3 +52,10 @@ Constructing H2(k)'
     There are many well known high quality hash functions for these fundam;ental data types. Hence, we can use and combine them to construct our fucntion H2(k)
     Frequently, the hash functions selected toc ompose H2(k) are picked from a pool of hash functions called universal hash functions
     which generally operate on one fundamental data type.
+
+Inserting with double hashing 
+    Suppose we have an originally empty hash table anbd we want ot insert some (ki,vi) pairs iwth Double hashing and we selected our hash table to have
+    Probing function: P(x) = x*H2(k)
+    Table size: N=7 (A prime number)
+    max load fact or: Alpha = 0.75
+    threshold before resize = N * a = 5
