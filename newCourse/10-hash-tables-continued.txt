@@ -35,3 +35,20 @@ Chaos with cycles
     H(K) + P(6) mod N = 4
     H(K) + P(7) mod N = 7
     H(K) + P(8) mod N = 1
+
+
+Chaos with cycles
+    To fix the issue of cycles pick the table size to be a prime number and also compute the value of 
+
+Constructing H2(k)'
+    Suppose the k has type t
+
+    Whenever we want to use double hashing as a collision resolution method we need to fabricate a new functionH2(k)
+    that knowns how to hash  keys of type T.
+
+    It would be nice to have a systematic way to be able to effectively produce a new hash function every time we need one.
+    Luckily for us, the keys we need to hash are always composed of the same fundamental building blocks. IN particular: integers, strings, real numbers, fixed length vectors, etc...
+
+    There are many well known high quality hash functions for these fundam;ental data types. Hence, we can use and combine them to construct our fucntion H2(k)
+    Frequently, the hash functions selected toc ompose H2(k) are picked from a pool of hash functions called universal hash functions
+    which generally operate on one fundamental data type.
