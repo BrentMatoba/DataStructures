@@ -211,3 +211,9 @@ Quadratic Probing:
 
     However, as we previously saw, not all quadratic functions are viable because they are unablet o produce a cycle
     of order N. We will nee some way to handle this.
+
+    Quadratic chaos with cycles:
+        Randomly selected Quadratic probing functions ahve the issue that they easily prodeuce short cycles.
+        For example, if P(x) = @x^2 + 2, H(k) = 4, and table size is N=9, we end up with an infinite loop.
+        The cycle {4,7} makes it impossible tor each buckets {0,1,2,3,5,6,8}
+        This would cause an infinite loop in our hash table if the buckets 4 and 7 were already occupied.
