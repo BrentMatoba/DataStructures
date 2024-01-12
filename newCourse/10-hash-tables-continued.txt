@@ -21,3 +21,17 @@ What is double hashing?
     H2(k) must hash the same type of keys as H1(k)
         NOTE: Notice that doubling hashing reduces to linear probing (except that the constant is unknown until runtime)
     
+
+Chaos with cycles 
+    Since double hashing reduces to linear probing at runtime, we may end up with a linear probing function such as 
+    P(x) =  3x, H1(k) = 4, and table size is N=9.
+    In this case, we end up witht he following cycle occuring
+    H(K) + P(0) mod N = 4
+    H(K) + P(1) mod N = 7
+    H(K) + P(2) mod N = 1
+    H(K) + P(3) mod N = 4
+    H(K) + P(4) mod N = 7
+    H(K) + P(5) mod N = 1
+    H(K) + P(6) mod N = 4
+    H(K) + P(7) mod N = 7
+    H(K) + P(8) mod N = 1
