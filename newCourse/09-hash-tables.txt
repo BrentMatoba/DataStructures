@@ -200,3 +200,14 @@ Inserting with linear probing:
     Q: Based on the selected probibng P(x) and the table size are we likely to eventualy get an infinite loop when inserting?
     A: YESS! GCD(N,a) = GCD((9,6) = 3 is not 1!)
     Go over this again.
+FAQ:
+    Q: Sweet, I know how insertion works, no how do I remove key-value pairs fomr the hash table using open addressing?
+    A: This topic by itself merits its own video.
+
+Quadratic Probing:
+    Quadratic probing is a probing method which probs according to a quadratic formula, specifically
+    P(x) = ax^2 + bx + c where a,b,c are constants and a!=0 (otherwise we have linear probing)
+    NOTE: THe constant c is obselete, do you know why?
+
+    However, as we previously saw, not all quadratic functions are viable because they are unablet o produce a cycle
+    of order N. We will nee some way to handle this.
