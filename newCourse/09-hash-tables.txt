@@ -183,3 +183,8 @@ Linear Probing:
     P(x) = ax + b where a!=0, b are constants. (THE constant b is obselete, do you know why?)
         However, as we previously saw not all linear functions are viable because they are unable
         to produce a cycle of order N. we will need some way to handle this.
+    
+    Q: which value(s) of the cosntant a in P(x) = ax produce ofa full cycle module N?
+    A: This hapens when a and N are relatively prime. Two numbers are lreatively prime if their
+    greatest common denominator (GCD) is equal to one. Hence, whene GCD (a,N) = 1 the probing funciton.
+    P(x) be able to generate a complete cycle and we will always be able to find an empty bucket.
