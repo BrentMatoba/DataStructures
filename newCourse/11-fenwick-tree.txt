@@ -18,3 +18,14 @@ Data Strucutre Motivation:
     5 -3 6 1 0 -4 11 6 2 7
         If you were to add all of these intuitively, you get linear time, (BAD)
     If you use a fenwick tree and calculate prefix sums, you get constant time (VERY GOOD)
+
+    Prefix sums: An array of the sums of different combinations of elements from the first array.
+    Prefix Sums Array: You create a new array where each element is the sum of all elements from 
+    the start of the original array up to that point. For our example, the prefix sums array would be:
+
+        First element: 3 (just the first element itself)
+        Second element: 3 + 5 = 8 (sum of first and second elements)
+        Third element: 3 + 5 + 2 = 10 (sum of first three elements)
+        Fourth element: 3 + 5 + 2 + 7 = 17 (sum of first four elements)
+        Fifth element: 3 + 5 + 2 + 7 + 9 = 26 (sum of all five elements)
+        So, the prefix sums array is [3, 8, 10, 17, 26].
