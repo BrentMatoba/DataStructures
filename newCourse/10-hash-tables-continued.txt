@@ -59,3 +59,15 @@ Inserting with double hashing
     Table size: N=7 (A prime number)
     max load fact or: Alpha = 0.75
     threshold before resize = N * a = 5
+
+Hash Table: Removing with double addressing
+    Suppose we have an empty hash table and we're using linear probing with P(x) = x
+    N=8
+
+    Assume for the sake of argument that H(k1) = H(k2) = H(k3) = 1
+        Hash collision
+    For this example, we'll just use neaive removing where we just clear the bucket and explore why that doesn't work
+
+    The value in the bucket at index 2 is null so we must conclude that the key k3 does not exist in the has htable otehrwise we
+    would have foudn it before reaching the null position.
+    However, the k3 variable exists with the hash table! Hence, the naive removing method doesn't work.
