@@ -71,3 +71,14 @@ Hash Table: Removing with double addressing
     The value in the bucket at index 2 is null so we must conclude that the key k3 does not exist in the has htable otehrwise we
     would have foudn it before reaching the null position.
     However, the k3 variable exists with the hash table! Hence, the naive removing method doesn't work.
+
+    The solution:
+        The soultion is to place a unique marker called a tombstone intead of null to indicate that a (k,v) pair
+        has been deleted and that the bucket shoudl be skipped during a search.
+        Lets replace the deleted bucket with a tombstone as we shoudl ahve done and see what happens.
+    
+    TombStone Questions:
+        Q: I have a lot of tombstones cluttering my hash table, how do i get rid of them?
+        A: Tombstones count as filled slots in the Hash Table so they increase the load factor and will be removed
+        when the table is resized. Additionally, when inserting a new (k,v) pair you can replace bucktes with tombstones
+        with the new key-value pair. 
