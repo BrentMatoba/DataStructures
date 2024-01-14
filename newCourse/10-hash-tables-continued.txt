@@ -82,3 +82,11 @@ Hash Table: Removing with double addressing
         A: Tombstones count as filled slots in the Hash Table so they increase the load factor and will be removed
         when the table is resized. Additionally, when inserting a new (k,v) pair you can replace bucktes with tombstones
         with the new key-value pair. 
+    Lazy Deletion:
+        When placing a new key-value pair, you can replace the first tombstone you find. This is to avoid more probing than necessary.
+        The next time we look up the key, it'll be much faster! This is called lazy deletion.
+
+        CHATGPT: "Lazy deletion in data structures, like hash tables or binary trees, is a method where you mark an item as deleted without
+        actually removing it right away. When you want to delete something, you just flag it as deleted. The actual removal happens later,
+         maybe when the data structure is getting too full or during a reorganization process. This makes deletion operations faster initially 
+         but can slow down other operations if there are many marked items."
