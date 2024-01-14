@@ -1,0 +1,20 @@
+Fenwick Tree (also called Binary Indexed Tree)
+Effecient and very simple to code.
+
+Outline
+    1. Discussion and Examples
+        1.1 Data Structure motivation.
+        1.2 What is a Fenwick Tree?
+        1.3 Complexity Analysis
+    2. Implementation Details
+        2.1 Range Query
+        2.2 Point Updates
+        2.3 Fenwick Tree Construction
+    3. Code Implementation
+
+
+Data Strucutre Motivation:
+    Given an array of integer values, compute the range sum between index[i, j)
+    5 -3 6 1 0 -4 11 6 2 7
+        If you were to add all of these intuitively, you get linear time, (BAD)
+    If you use a fenwick tree and calculate prefix sums, you get constant time (VERY GOOD)
