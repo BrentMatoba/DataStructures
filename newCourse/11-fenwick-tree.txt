@@ -53,3 +53,9 @@ Range of responsibility: the specific subset of elements that each node in the t
  The range of responsibility for each node is determined by its position in the tree and is used to efficiently 
  compute prefix sums and update values in the array.
 
+    All odd numbers have their first least significant bit set in the oens position, so they are only responsible for themselves.
+
+Range Queries:
+    In a fenwick tree, we may compute the prefix sum up to a certian index, which ultimately l,ets us perform range sum queries.
+Idea: Suppose you want to find the prefix sum [1,i] then you start at i and cascade downwards until you reach zero adding the value at each
+of the indices you encounter
