@@ -35,3 +35,11 @@ Data Strucutre Motivation:
 
     Fenwick Tree: Also Called Binary Indexed Tree, is a data strucutre that supports sum range queuries as well as
     setting values in a static array and getting the value of the prefix sum up some index effeciently
+
+Time ComplexitY:
+    Construction: O(n)
+    Point UPdate: O(log(n))
+    Range Sum: O(log(n))
+    Range Update: O(log(n))
+    Adding Index: N/a
+    Removing Index: N/A
