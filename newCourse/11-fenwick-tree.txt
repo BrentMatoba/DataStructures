@@ -29,3 +29,9 @@ Data Strucutre Motivation:
         Fourth element: 3 + 5 + 2 + 7 = 17 (sum of first four elements)
         Fifth element: 3 + 5 + 2 + 7 + 9 = 26 (sum of all five elements)
         So, the prefix sums array is [3, 8, 10, 17, 26].
+    
+    Question: WHat about if we want to update our intial array with some new value?
+    Answer: A prefix sum array is great for static arrays, but takes O(n) for updates.
+
+    Fenwick Tree: Also Called Binary Indexed Tree, is a data strucutre that supports sum range queuries as well as
+    setting values in a static array and getting the value of the prefix sum up some index effeciently
