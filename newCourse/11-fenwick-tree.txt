@@ -43,3 +43,7 @@ Time ComplexitY:
     Range Update: O(log(n))
     Adding Index: N/a
     Removing Index: N/A
+
+Unlike a regular array, in a Fenwick tree, a specific cell is responsible for other cells as well.
+The position of the least significant bit LSB determines the range of responsibility that cel has to the cells below itself.
+Index 12 in binary is 1100 LSB is at posoition 3, so this index is resp[onsibile for 2^3-1 = 4 cells below itself]
