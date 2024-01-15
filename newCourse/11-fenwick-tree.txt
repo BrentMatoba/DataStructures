@@ -47,3 +47,9 @@ Time ComplexitY:
 Unlike a regular array, in a Fenwick tree, a specific cell is responsible for other cells as well.
 The position of the least significant bit LSB determines the range of responsibility that cel has to the cells below itself.
 Index 12 in binary is 1100 LSB is at posoition 3, so this index is resp[onsibile for 2^3-1 = 4 cells below itself]
+
+Range of responsibility: the specific subset of elements that each node in the tree is responsible for.
+ In a Fenwick tree, each node represents the cumulative total of a range of elements from an underlying array. 
+ The range of responsibility for each node is determined by its position in the tree and is used to efficiently 
+ compute prefix sums and update values in the array.
+
