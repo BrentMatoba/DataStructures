@@ -93,3 +93,18 @@ To update the cell at index i int he Fenwick tree of size N:
     Where LSB returns the value of the least significant bit.
     For exmaple:
         LSB(12) = 4 because 12^10 = 1100^2 and the least significant bit of 1100^2 is 10^2, or 4 in base ten
+
+
+    
+
+
+Fenwick Tree Construction:
+    Naive Construciton:
+        Let A be an array of values. For each element in A at index i do a point update on the Fenwick tree with a vlaue of A[i]
+        There are n elements and each point update takes O(log(n)) for a total of O(nlog(n)), can we do better?
+    Linear Construction:
+        Input values we wish to turn into a legitimate Fenwick Tree.
+        Idea; Add tehv alue in the current cell to the immediate cellt hat is responsible for us. This resembles what we did for 
+        point updates but only one cell at a time.
+
+        This will make the "cascading" effect in range queries possible by propogating the value in each cell throughout the tree.
