@@ -8,4 +8,14 @@ For instsance, the word HORSE has five different suffixs.
     ORSE
     HORSE
         *entire word is counted as a variation
-    
+
+
+A suffix Array is an array which contains ALL the sorted suffixes of a string.
+What could the possible use case be?
+
+For Example, the suffix array of "camel" is
+    0:Camel             1: amel
+    1:Amel              0: camel
+    2:mel      ->       3: el
+    3:el                4: l
+    4:l                 2: mel
