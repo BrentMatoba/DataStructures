@@ -19,3 +19,9 @@ For Example, the suffix array of "camel" is
     2:mel      ->       3: el
     3:el                4: l
     4:l                 2: mel
+
+The actual "suffix array" is the array of sorted indices, the numbers themselves.
+This provides a compressed representation of the sorted needing to store the suffixes.
+
+The suffix array provides a space efficient alternative to a suffix tree which itself is a compressed version of a trie.
+    note: suffix arrays cand o everything suffix trees can, with some additional information such as a longest common prefix (LCP) array
