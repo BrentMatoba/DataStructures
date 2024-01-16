@@ -59,3 +59,15 @@ Range Queries:
     In a fenwick tree, we may compute the prefix sum up to a certian index, which ultimately l,ets us perform range sum queries.
 Idea: Suppose you want to find the prefix sum [1,i] then you start at i and cascade downwards until you reach zero adding the value at each
 of the indices you encounter
+
+Range Query Algorithm
+    To do a range query from [i, j] both inclusisive a fenwick tree of Size N:
+        fucniton prefixSum(i):
+            sum = 0
+            while i != 0
+                sum = sum + tree[i]
+                i = i - LSB(i)
+            return sum
+        function rangeQuery(i,j):
+            return prefixSum(j) - prefixSUm(i-1)
+            Where LSB returns the value oft he least significant bit.
