@@ -1,0 +1,11 @@
+What is a suffix?
+A suffix is a substring at the enod of a string of characters. For our purposes, suffixes are non empty.
+
+For instsance, the word HORSE has five different suffixs.
+    E
+    SE
+    RSE
+    ORSE
+    HORSE
+        *entire word is counted as a variation
+    
