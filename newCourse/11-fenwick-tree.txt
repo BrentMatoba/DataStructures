@@ -76,3 +76,14 @@ Point Update:
     INstead of querying a range to find hte inteval sum we want to update a cell in our array.
     Recall that with range queries we cascaded downf orm the current idnex by continuously removing the least significant bit
     Point updates are the opposite of this, we want to add the LSB to propogate the value up to tghe cells responsibole for us.
+
+
+1.Start with the index where you want to make the update. Increase the value at this index by the amount you want to update.
+2.Move to the next index that needs to be updated. This is calculated by taking the current index and adding to it the rightmost set bit in its binary representation.
+3.Repeat step 2 until you reach an index that is outside the range of the tree (greater than the size of the tree).
+In this way, a Fenwick Tree efficiently updates the values while maintaining the ability to quickly compute prefix sums.
+
+
+
+
+
