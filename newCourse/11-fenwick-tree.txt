@@ -71,3 +71,8 @@ Range Query Algorithm
         function rangeQuery(i,j):
             return prefixSum(j) - prefixSUm(i-1)
             Where LSB returns the value oft he least significant bit.
+
+Point Update:
+    INstead of querying a range to find hte inteval sum we want to update a cell in our array.
+    Recall that with range queries we cascaded downf orm the current idnex by continuously removing the least significant bit
+    Point updates are the opposite of this, we want to add the LSB to propogate the value up to tghe cells responsibole for us.
