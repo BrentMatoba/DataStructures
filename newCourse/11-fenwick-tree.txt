@@ -83,7 +83,13 @@ Point Update:
 3.Repeat step 2 until you reach an index that is outside the range of the tree (greater than the size of the tree).
 In this way, a Fenwick Tree efficiently updates the values while maintaining the ability to quickly compute prefix sums.
 
-
-
-
-
+Point update algorithm
+To update the cell at index i int he Fenwick tree of size N:
+    function add(i, x):
+        while i< N:
+        tree[i] = tree[i] + x
+        i = i + LBS(i)
+    
+    Where LSB returns the value of the least significant bit.
+    For exmaple:
+        LSB(12) = 4 because 12^10 = 1100^2 and the least significant bit of 1100^2 is 10^2, or 4 in base ten
