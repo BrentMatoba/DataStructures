@@ -15,3 +15,14 @@ Insert, Average: O(log(n)), Worst: O(log(n))
 Delete, Average: O(log(n)), Worst: O(log(n))
 Remove, Average: O(log(n)), Worst: O(log(n))
 Search, Average: O(log(n)), Worst: O(log(n))
+
+ Tree Rotations:
+    The secret ingredient to most balanced binary search tree algorithms is the clever usage
+    of a tree invariant and tree rotations.
+
+    A treeinvariant is a property/rule you impose on your tree that it must meet after every operation.
+    To ensure that the invariant is always satisfied a series of tree roations are normally applied.
+
+    Q: WHy does this work? Why are you allowed to change the structure of a tree like this?
+    Short answer: in the left tree we know that D < B < E < A < C and this remains true for the right
+    subtree, so we didn't break the BST invariant, and therefore, this is a valid transformation
