@@ -26,3 +26,10 @@ Search, Average: O(log(n)), Worst: O(log(n))
     Q: WHy does this work? Why are you allowed to change the structure of a tree like this?
     Short answer: in the left tree we know that D < B < E < A < C and this remains true for the right
     subtree, so we didn't break the BST invariant, and therefore, this is a valid transformation
+
+    Long answer: Recall taht all Balanced Binary search trees are binary search trees so that 
+    the binary search tree invariant holds. This means that for eveyr node n, n.left < n and n < n.right
+
+    Note: This assumes that we only have unique values, other we'd have to consider the case where n. left <= n and n <= right
+    It does not matter what the structure of the tree looks; all we care about is that the binary search tree
+    invariant holds. This means we can shuffle/transofrm/rotae the values and nodes in the tree as we please as ong as the BST invariant remians satisfied!
